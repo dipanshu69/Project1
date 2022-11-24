@@ -1,0 +1,13 @@
+@import "colors";
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  > li {
+    font: 300 2rem $text1;
+  }
+}

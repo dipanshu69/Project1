@@ -1,11 +1,17 @@
 import Header from "./components/Header";
-import About from "./components/About";
 import Home from "./components/Home";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import Services from "./components/Services";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import "./styles/App.scss";
 import "./styles/header.scss";
+import "./styles/home.scss";
+import "./styles/contact.scss";
+import  "./styles/footer.scss";
+import "./styles/services.scss"
+import "./styles/mediaquery.scss";
 
 
 function App(){
@@ -15,7 +21,7 @@ function App(){
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/about" element={<About />} />
+                <Route path="/services" element={<Services/>} />
             </Routes>
             <Footer />
         </Router>
